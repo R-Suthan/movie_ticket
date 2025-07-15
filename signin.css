@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* font-family: Inter, sans-serif; */
+      font-family: cursive;
+}   
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background: linear-gradient(19deg,rgb(104, 230, 112) 0%,rgb(76, 123, 148) , rgb(100, 156, 155) 21%, rgba(28, 181, 224, 1) 49%, rgba(41, 124, 80, 1) 78%, rgba(40, 154, 118, 1) 87%, rgba(36, 255, 248, 1) 100%);
+    /* background: linear-gradient(90deg,rgba(30, 148, 199, 1) 6%, rgba(66, 235, 136, 1) 50%, rgba(141, 196, 224, 1) 88%); */
+    background-size: 100% 150%;
+    /* animation: change 20s infinite 1s ease-in; */
+    animation: change 3s ease 1s infinite;
+}
+
+@keyframes change {
+
+0%{
+    background-position: 0% 50%;
+}
+
+50%{
+    background-position: 100% 100%;
+}
+100%{
+    background-position: 0% 50%;
+}
+
+}
+
+.container{
+    width: 400px;
+    height: 470px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.33);
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.close-icon{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+   
+}
+
+.close-icon i{
+    font-size: 1.2rem;
+     background: transparent;
+     color: aliceblue;
+     opacity: 0.6;
+}
+
+.close-icon i:hover{
+    color: black;
+}
+
+.heading h2{
+    font-size: 2rem;
+    font-family:cursive;
+}
+
+.input-box input{
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  /* background: transparent; */
+  border: 1px solid #000851;
+}
+
+.input-box input::placeholder{
+    color: black;
+  
+}
+.input-box input:focus{
+    /* color: #00b8f5; */
+    outline: #00b8f5;
+    
+}
+.forget{
+    text-align: start;
+    margin-top: 10px;
+}
+.forget a{
+    color: black;
+
+}
+
+.container .login{
+   width: 100%;
+   background-color: black;
+   padding: 10px;
+   border-radius: 5px;
+   margin-top: 20px;
+}
+.container .login a{
+    color: white;
+    font-size: 1.4rem;
+}
+
+.container p{
+    margin-top: 20px;
+}
+
+.container p a{
+    color: white;
+    font-weight: bold;
+}
+.container p a:hover{
+    color: black;
+}
